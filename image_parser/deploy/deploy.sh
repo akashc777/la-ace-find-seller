@@ -13,5 +13,6 @@ gcloud beta functions deploy $FUNCTION_NAME \
     --trigger-resource=$PUB_SUB_TOPIC \
     --trigger-event="google.pubsub.topic.publish" \
     --project=$PROJECT_NAME \
+    --runtime=nodejs10 \
     --region=$PROJECT_REGION \
     --set-env-vars=BIGTABLE_INSTANCE_ID=$BIGTABLE_INSTANCE_ID,BIGTABLE_TABLE_ID=$BIGTABLE_TABLE_ID,CLOUD_STORAGE_BUCKET=$PUBLIC_ASSETS
