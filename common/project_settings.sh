@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # The name of the project to deploy services into.
-PROJECT_NAME="ace-demo-2"
+PROJECT_NAME="playground-s-11-6c3a1f"
 
 # Which default region should regional services use?
 PROJECT_REGION="us-central1"
@@ -17,7 +17,7 @@ PROJECT_ZONE="us-central1-b"
 ENV_TYPE="dev"
 
 # Used as a prefix for select service names.
-ORGANIZATION="find-seller"
+ORGANIZATION=""
 
 # This is the Storage bucket used for public assets. 
 # The entire bucket is public by default
@@ -56,7 +56,7 @@ FUNCTION_NAME="fs2-upload"
 
 # Bigtable settings...
 # The name of our Bigtable instance. An instance is basically a container for our cluster.
-BIGTABLE_INSTANCE_ID="$ORGANIZATION-bt-instance-$ENV_TYPE"
-BIGTABLE_CLUSTER_ID="$ORGANIZATION-bt-cluster-$ENV_TYPE"
-BIGTABLE_DISPLAY_NAME="$ORGANIZATION-bt-name-$ENV_TYPE"
+BIGTABLE_INSTANCE_ID="bt-instance-$ENV_TYPE"
+BIGTABLE_CLUSTER_ID="bt-cluster-$ENV_TYPE"
+BIGTABLE_DISPLAY_NAME="bt-name-$ENV_TYPE"
 BIGTABLE_TABLE_ID=items
